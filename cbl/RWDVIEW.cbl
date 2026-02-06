@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. RWDVIEW.
-       AUTHOR. Gemini Code Assist.
+       AUTHOR. Gemini Assist.
       ******************************************************************
       * This program allows a user to view their rewards points balance.
       * It is invoked from the main rewards menu (RWDMENU).
@@ -128,4 +128,5 @@
                          FROM(RWDVWM1O)
                          CURSOR
            END-EXEC.
+
            EXIT.
