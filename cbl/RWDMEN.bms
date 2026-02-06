@@ -1,0 +1,31 @@
+*--------------------------------------------------------------------*
+*    BMS MAPSET FOR REWARDS SYSTEM - MAIN MENU
+*--------------------------------------------------------------------*
+RWDMEN   DFHMSD TYPE=&SYSPARM,                                          *
+               LANG=COBOL,                                             *
+               MODE=INOUT,                                             *
+               TERM=ALL,                                               *
+               CTRL=FREEKB,                                            *
+               STORAGE=AUTO,                                           *
+               TIOAPFX=YES
+
+RWDMAP1  DFHMDI SIZE=(24,80),                                           *
+               LINE=1,                                                 *
+               COLUMN=1
+
+         DFHMDF POS=(01,32),LENGTH=18,INITIAL='REWARDS SYSTEM MENU'
+
+         DFHMDF POS=(04,02),LENGTH=25,INITIAL='Please select an option:'
+
+         DFHMDF POS=(06,05),LENGTH=16,INITIAL='1. View Points'
+         DFHMDF POS=(07,05),LENGTH=16,INITIAL='2. Redeem Points'
+
+         DFHMDF POS=(09,02),LENGTH=8,INITIAL='Option:'
+OPTION   DFHMDF POS=(09,12),LENGTH=1,ATTRB=(UNPROT,IC)
+
+* The program populates this field with an error or status message
+MSG1     DFHMDF POS=(23,02),LENGTH=78,ATTRB=ASKIP
+
+         DFHMDF POS=(24,02),LENGTH=40,INITIAL='Press PF3 to exit the rewards system.'
+
+         DFHMSD TYPE=FINAL
