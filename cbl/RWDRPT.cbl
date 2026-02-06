@@ -115,7 +115,7 @@
 
        01  S1-SUMMARY-LINE.
            05 FILLER             PIC X(83) VALUE SPACES.
-           05 FILLER             PIC X(25) VALUE 'TOTAL POINTS THIS PERIOD:'.
+           05 FILLER             PIC X(25) VALUE 'TOTAL POINTS'.
            05 S1-TOTAL-POINTS    PIC +++,+++,++9.99.
            05 FILLER             PIC X(10) VALUE SPACES.
 
@@ -213,3 +213,4 @@
                GOBACK
 
            END-IF.
+
