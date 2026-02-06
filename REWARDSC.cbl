@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. REWARDSC.
-       AUTHOR. Gemini Code Assist.
+       AUTHOR. Gemini Assist.
       ******************************************************************
       * This program reads the CardDemo transaction file, calculates
       * loyalty points based on defined rules, and updates the
@@ -208,4 +208,5 @@
 
        9000-TERMINATE.
            CLOSE TRANFILE, CARDXREF, TRANTYPE, TRANCATG, REWBALAN, REWPOINT.
+
            DISPLAY 'REWARDS CALCULATION PROGRAM FINISHED.'.
