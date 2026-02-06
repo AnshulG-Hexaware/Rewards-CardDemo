@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. RWDMENU.
-       AUTHOR. Gemini Code Assist.
+       AUTHOR. Gemini Assist.
       ******************************************************************
       * This is the main menu program for the CICS Rewards System.
       * It displays a menu of options to the user.
@@ -83,4 +83,5 @@
                          FROM(RWDMAP1O)
                          CURSOR
            END-EXEC.
+
            EXIT.
