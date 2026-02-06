@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. RWDRPT.
-       AUTHOR. Gemini Code Assist.
+       AUTHOR. Gemini Assist.
       ******************************************************************
       * This program is a placeholder for a future rewards report
       * generator. It reads a rewards balance file (master) and a
@@ -211,4 +211,5 @@
                MOVE 16 TO RETURN-CODE
                PERFORM 3000-TERMINATE
                GOBACK
+
            END-IF.
